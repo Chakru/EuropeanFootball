@@ -104,7 +104,7 @@ GO
 -- Expected Output:
 -- Two numbers: average home goals, average away goals.
 
-SELECT ROUND(AVG(home_team_goal), 2) AS [Avg. Home Goal], ROUND(AVG(away_team_goal), 2) AS [Avg. Away Goal] FROM MATCH;
+SELECT ROUND(AVG(CAST(home_team_goal AS FLOAT)), 2) AS [Avg. Home Goal], ROUND(AVG(CAST(away_team_goal AS FLOAT)), 2) AS [Avg. Away Goal] FROM MATCH;
 GO
 
 
