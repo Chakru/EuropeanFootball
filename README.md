@@ -1,6 +1,6 @@
 # European Soccer Game Analysis
 
-A structured SQL Server project built to explore and analyse the European Soccer Database. This repository documents the full journey: from data migration to deep analytical queries, all inside Microsoft SQL Server.
+A structured, SQL analytical project built using Microsoft SQL Server. This repository documents an end-to-end journey: from dataset migration and validation to deep relational and analytical SQL.
 
 ---
 
@@ -8,8 +8,9 @@ A structured SQL Server project built to explore and analyse the European Soccer
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
 - [Tech Stack](#tech-stack)
+- [Project Roadmap](#project-roadmap)
 - [Repository Structure](#repository-structure)
-- [Current Progress](#current-progress)
+- [Current Status](#current-status)
 - [Dataset](#dataset)
 - [How to Use This Repository](#how-to-use-this-repository)
 
@@ -17,26 +18,73 @@ A structured SQL Server project built to explore and analyse the European Soccer
 
 ## Project Overview
 
-This project is designed to sharpen SQL expertise using a complete end-to-end workflow. You’ll find scripts that walk through environment setup, database migration, exploratory queries, and progressively complex analysis. The focus is on clarity, structure, and real analytical thinking.
+This project is designed to build strong, production-ready SQL skills through a realistic analytics workflow. The focus is not just on writing queries, but on understanding data, validating it, structuring analysis, and gradually moving toward an analytical data model built entirely in SQL.
+
+All work is executed inside Microsoft SQL Server using T-SQL.
 
 ---
 
 ## Objectives
 
-- Build a strong command of Microsoft SQL Server through hands-on work.  
-- Explore league, team, match, and player data using targeted queries.  
-- Develop reusable SQL scripts for exploration and analysis.  
-- Document the process with clear, organised folders.  
-- Apply database analysis to replicate real-world analytics workflows.
+- Develop a deep understanding of relational databases and SQL Server internals  
+- Practise structured SQL analysis using real-world sports data  
+- Progress from basic exploration to advanced analytical SQL  
+- Build reusable, well-documented SQL scripts  
+- Create a GitHub-ready SQL portfolio project  
 
 ---
 
 ## Tech Stack
 
 - Microsoft SQL Server Express  
+- SQL Server Management Studio (SSMS)  
 - T-SQL  
-- SQLite (original Kaggle dataset)  
-- SQL Server Management Studio (SSMS)
+- Python (for SQLite → SQL Server migration only)  
+
+---
+
+## Project Roadmap
+
+### Phase 1: Exploration & Foundations ✅ **Completed**
+- Database migration from SQLite  
+- Schema inspection and relationship verification  
+- Basic SELECT queries  
+- Aggregation and summarisation  
+- Data validation and integrity checks  
+
+**Deliverable:**  
+Complete exploration and validation SQL script collection
+
+---
+
+### Phase 2: Relational Mastery (Joins, CTEs, Subqueries)
+- Multi-table joins (Match, Team, League, Country)  
+- Reusable CTE libraries  
+- Subquery-based comparisons  
+- Set-based analysis  
+
+---
+
+### Phase 3: Analytical SQL (Advanced Concepts)
+- Window functions  
+- CASE-based classifications  
+- Date and time analysis  
+- Anomaly detection using SQL only  
+
+---
+
+### Phase 4: SQL Data Modelling
+- Staging → Clean → Model schema design  
+- Data cleaning and standardisation  
+- Analytical SQL views  
+
+---
+
+### Phase 5: Optimisation & Production Readiness
+- Indexing strategies  
+- Query plan optimisation  
+- Stored procedures  
+- Final documentation  
 
 ---
 
@@ -55,18 +103,22 @@ The repository is organized into different phases, each corresponding to a key p
 
 ---
 
-## Current Progress
+## Current Status
 
-- Database migration from SQLite to Microsoft SQL Server: **Completed**  
-- Data verification against Kaggle row counts: **Completed**  
-- Phase 2 (Exploration) starting next: writing and documenting exploratory SQL scripts  
+- Phase 1 (Exploration & Foundations): **Completed**
+- Phase 2 (Relational Mastery): **Up next**
+
+All Phase 1 scripts have been validated and committed. The database is now fully understood, verified, and ready for relational analysis.
 
 ---
 
 ## Dataset
 
-**Source:** European Soccer Database (Kaggle)  
-Includes:  
+**European Soccer Database**  
+Source: Kaggle  
+Format: SQLite (`database.sqlite`)  
+
+The dataset includes:
 - Matches  
 - Teams  
 - Players  
@@ -75,21 +127,21 @@ Includes:
 - Leagues  
 - Countries  
 
-This dataset is widely used for learning relational analysis and multi-table SQL querying.
+The raw dataset is not included in this repository due to size and licensing considerations.
 
 ---
 
 ## How to Use This Repository
 
-1. Open the folder that corresponds to the phase you want to explore.  
-2. Each SQL file includes a short description of what the query does.  
-3. Scripts are written for SQL Server, so they use T-SQL syntax.  
-4. New folders and scripts will be added as the project progresses.
+1. Set up the database using scripts in `01_setup_and_migration`  
+2. Review exploration and validation queries in `02_exploration`  
+3. Follow the roadmap sequentially as new phases are added  
+4. All scripts are written for Microsoft SQL Server (T-SQL)
+
+Each folder contains focused SQL scripts and supporting documentation.
 
 ---
 
 ## Project Status
 
-This repo will evolve alongside the project. Each phase will include well-structured scripts, detailed comments, and documented insights.
-
-Stay tuned for updates in the exploration folder.
+This repository will continue to evolve as the project progresses through advanced relational analysis, analytical SQL, and data modelling phases.
